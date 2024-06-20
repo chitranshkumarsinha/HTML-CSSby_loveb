@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color:rgba(193, 220, 197, 0.907);
+           display: flex; 
+           /*default direction of flex is rowwise*/
+           border: solid black;
+           /* flex-direction: column; */
+           height: 500px;
+           /* width: 500px; */
+           flex-wrap:wrap;
+           flex: 200px;
+           /* flex-flow: row wrap; */
+           /* both wrap and direction in one action */
+           /* justify-content:center; */
+           justify-content:space-around;
+           align-items:stretch;
+           /* align-content: start; */
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            padding: 2px;
+          
+        }
+        #box1{
+            background-color: blue;
+            flex-shrink: 4;
+            /* this box will shrink by four times comparison to other boxes */
+            /* flex: 1; */
+            
+        }
+        #box2{
+            background-color: blueviolet;
+           /* flex-grow: 1; */
+           /* This will take all the unused space */
+           /* flex: 1; */
+
+        }
+        #box3{
+            background-color: brown;
+            /* flex: 2; */
+          
+        }
+        #box4{
+            background-color: cadetblue;
+            /* flex-basis: 200px; */
+            /* flex: 1; */
+     
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open sans">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    }
+    body{
+        background-color:#f0f2f5;
+       display: flex;
+       justify-content: center;
+       padding-top:10% ; 
+    }
+    .main{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    }
+    .part1 h2{
+    font-family: "Open sans", sans-serif;
+    color: blue;
+    }
+    .box{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: .5rem;
+        height: 200px;
+        width: 250px;
+        box-shadow: 2px 2px 2px #d1d8e2 ;
+    }
+    .btn{
+        background-color: rgb(95, 95, 237);
+        color: white;
+        border: none;
+        border-radius: .3rem;
+        padding: 0.5rem;
+        font-size: larger;
+    }
+    .input{
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        border:solid rgb(224, 217, 217) 0.1px;
+    }
+    .box p{
+        margin-left: 4rem;
+        color: rgb(63, 63, 212);
+        font-size:1rem;
+    }
+</style>
+</head>
+<body>
+        <div class="main">
+            <div class="part1">
+                <h2>
+                    facebook
+                </h2>
+                <p>
+                    Facebook helps you connect and share <br>
+    
+                    with the people in your life.
+                </p>
+            </div>
+            <div class="part2">
+                <div class="box">
+                    <input type="email" class="input" type="number" placeholder="Email address or phone number">
+                    <input type="number" class="input" placeholder="Password">
+                    <button class="btn" type="submit">Log in</button>
+                    <p>
+                        Forgotten password?
+                    </p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
